@@ -37,7 +37,7 @@ body {
     }
 }
 
-.container {
+.timelineContainer {
     padding: 10px 50px;
     position: relative;
     width: 50%;
@@ -56,31 +56,31 @@ body {
     }
 }
 
-.container:nth-child(1) {
+.timelineContainer:nth-child(1) {
     animation-delay: 0s;
 }
 
-.container:nth-child(2) {
+.timelineContainer:nth-child(2) {
     animation-delay: 1s;
 }
 
-.container:nth-child(3) {
+.timelineContainer:nth-child(3) {
     animation-delay: 2s;
 }
 
-.container:nth-child(4) {
+.timelineContainer:nth-child(4) {
     animation-delay: 3s;
 }
 
-.left-container {
+.left-timelineContainer {
     left: 0;
 }
 
-.right-container {
+.right-timelineContainer {
     left: 50%;
 }
 
-.container img {
+.timelineContainer img {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -89,11 +89,11 @@ body {
     z-index: 10;
 }
 
-.left-container img {
+.left-timelineContainer img {
     right: -20px;
 }
 
-.right-container img {
+.right-timelineContainer img {
     left: -20px;
 }
 
@@ -113,7 +113,7 @@ body {
     color: #333;
 }
 
-.left-container-arrow {
+.left-timelineContainer-arrow {
     height: 0;
     width: 0;
     position: absolute;
@@ -125,7 +125,7 @@ body {
     right: -15px;
 }
 
-.right-container-arrow {
+.right-timelineContainer-arrow {
     height: 0;
     width: 0;
     position: absolute;
@@ -149,25 +149,25 @@ body {
         left: 31px;
         margin-left: 0;
     }
-    /* Make all containers full width and align left */
-    .container {
+    /* Make all timelineContainers full width and align left */
+    .timelineContainer {
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
     }
-    .left-container,
-    .right-container {
+    .left-timelineContainer,
+    .right-timelineContainer {
         left: 0;
     }
     /* Position all images on the left */
-    .left-container img,
-    .right-container img {
+    .left-timelineContainer img,
+    .right-timelineContainer img {
         left: 10px;
         right: auto;
     }
     /* Make all arrows point right */
-    .left-container-arrow,
-    .right-container-arrow {
+    .left-timelineContainer-arrow,
+    .right-timelineContainer-arrow {
         border-left: 0;
         border-right: 15px solid #fff;
         left: -15px;
